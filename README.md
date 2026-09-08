@@ -1,6 +1,6 @@
 # Chirp API
 
-REST API for [Chirp](https://github.com/RaphaelM20/Chirp), a full-stack Twitter/X clone. [Frontend Repo](https://github.com/RaphaelM20/Chirp)
+REST API for [Chirp](https://github.com/RaphaelM20/Chirp-api), a full-stack Twitter/X clone. [Live Demo](https://chirp-chirp.netlify.app/login)
 
 ## Tech Stack
 
