@@ -739,7 +739,6 @@ async function unfollowUser(req, res) {
 }
 
 async function notFollowingUsersGet(req, res) {
-  console.log("currentUserId:", req.user.id);
   const following = await prisma.follow.findMany({
     where: { followerId: req.user.id },
     select: {
@@ -766,8 +765,6 @@ async function notFollowingUsersGet(req, res) {
       },
     },
   });
-  console.log("followingIds:", followingIds);
-  console.log("users", users);
   return res.json(users);
 }
 
