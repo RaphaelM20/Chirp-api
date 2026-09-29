@@ -10,6 +10,12 @@ router.get(
 );
 
 router.get(
+  "/explore",
+  passport.authenticate("jwt", { session: false }),
+  indexController.explorePostsGet,
+);
+
+router.get(
   "/posts/:id",
   passport.authenticate("jwt", { session: false }),
   indexController.singlePostGet,
